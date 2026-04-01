@@ -41,3 +41,150 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* Minimal monochrome homepage style */
+.tk-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 3rem;
+}
+
+.tk-side {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+.tk-name {
+  margin: 0 0 1.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: #777;
+}
+
+.tk-side nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.tk-side nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.tk-side nav a:hover {
+  text-decoration: underline;
+}
+
+.tk-main {
+  min-width: 0;
+}
+
+.tk-block {
+  border-top: 1px solid #e9e9e9;
+  padding: 1.2rem 0 2.2rem;
+}
+
+.tk-hero {
+  border-top: 0;
+  padding-top: 0;
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tk-eyebrow {
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+.tk-hero h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 5.2vw, 4.8rem);
+  line-height: 1.02;
+  max-width: 900px;
+}
+
+.tk-hero p {
+  margin-top: 1rem;
+  max-width: 700px;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+.tk-block h2 {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.tk-block article {
+  padding: 0.9rem 0;
+  border-top: 1px solid #efefef;
+}
+
+.tk-block article h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.tk-block article p {
+  margin: 0.45rem 0 0;
+  color: #444;
+}
+
+.tk-block ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tk-block li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid #efefef;
+  padding: 0.85rem 0;
+}
+
+.tk-block li span {
+  color: #666;
+}
+
+.tk-contact p {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tk-contact a {
+  color: #111;
+}
+
+@media (max-width: 900px) {
+  .tk-shell {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .tk-side {
+    position: static;
+  }
+
+  .tk-side nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+}
